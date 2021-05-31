@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+  <!-- 导航栏 -->
+  <link rel="stylesheet" href="../css/mainnavigation bar.css">
+  <!-- 主体样式 -->
+  <link rel="stylesheet" href="../css/main.css">
+  <!-- 回到顶部js -->
+  <link rel="stylesheet" href="../css/articlelist.css">
+  <script type="text/javascript" src="../js/回顶/jquery.min.js"></script>
+  <script type="text/javascript" src="../js/回顶/script.js"></script>
+
+    <meta name="易武馆" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="tt-bar">
+        <!-- 导航栏 -->
+        <div class="lgpic">
+          <a href="../html/main.html#banner-tt" class="biaoti">易武馆俱乐部社区</a>
+        </div>
+        <!-- 搜索框 -->
+        <form action="https://www.baidu.com/s">
+        <div class="container">
+          
+          <input type="search" placeholder="武术赛事查询..."name="wd" autocomplete="off">
+      
+          <div class="search"></div>
+        </div>
+      </form>
+        <div class="registed-div">
+          <a href="../html/登录页面.html" title="重新登陆">
+            <img src="../img/喆喆头像.jpg" alt="这里是第一场图片"></img>
+          </a>
+          <p><a href="../html/登录页面.html" title="重新登陆"><i>喆喆&nbsp;</i></a>:欢迎登录易武馆</p>
+        </div>
+    
+        <!--回到顶部按钮-->
+        <a href="#" class="cd-top">g</a>
+        <nav>
+          <a href="../html/index.html">社区主页</a>
+          <a href="../html/个性装备.html">个性装备</a>
+          <a href="../html/赛事查询.html">赛事查询</a>
+          <a href="../html/学游线路.html">学游线路</a>
+          <a href="../html/健身课程.html">健身课程</a>
+          <a href="../html/武术影院.html">武术剧场</a>
+          <script>
+            document.querySelectorAll('a').forEach(elem => {
+              elem.onmouseenter =
+                elem.onmouseleave = e => {
+                  const tolerance = 5;
+                  const left = 0;
+                  const right = elem.clientWidth;
+                  let x = e.pageX - elem.offsetLeft;
+                  if (x - tolerance < left) x = left;
+                  if (x + tolerance > right) x = right;
+                  elem.style.setProperty('--x', `${x}px`);
+                };
+            });
+          </script>
+        </nav>
+    
+    
+    
+    
+    
+    
+    
+      </div>
+
+
+      <!--banner组-->
+     <h1>易武馆俱乐部社区</h1>
+      <div class="banner-set" id="banner-set">
+        <!--主要原件，轮播图-->
+        <div class="box">
+          <script type="text/javascript" src="../js/banner.js"></script>
+          <div class="box-1">
+            <ul>
+              <li>
+                <a href=""><img src="../img/教学.jpg" alt="这里是第一场图片"></img></a>
+                <h2>易武馆现代化教学场景</h2>
+              </li>
+              <li>
+                <a href="">
+                <img src="../img/武馆内部.jpg" alt="独联体成立"></img></a>
+                <h2>馆内环境样例</h2>
+              </li>
+              <li> <a href="../html/汉末流落漠北的才女蔡文姬！一曲胡笳多少离愁.html">
+                <img src="../img/武馆擂台.jpg" alt="这里是第三张图片"></img></a>
+                <h2>馆内教学环境</h2>
+              </li>
+              <li><a href="../html/春秋卫宋陈蔡四国联合攻打郑国之东门之战.html">
+                <img src="../img/现代化教具.jpg" alt="这里是第一场图片"></img></a>
+                <h2>易武馆现代化教具</h2>
+              </li>
+              <li><a href="../html/天龙八部中慕容复一直所要复国的大燕是哪个国家？.html">
+                <img src="../img/多种器材.jpg" alt="这里是第一场图片"></img></a>
+                <h2>IP化武术教学</h2>
+              </li>
+            </ul>
+          </div>
+          <div class="box-2">
+            <ul>
+            </ul>
+          </div>
+          <div class="box-3">
+            <span class="prev">
+              < </span>
+                <span class="next"> > </span>
+          </div>
+        </div>
+
+        <!--右侧侧配图-->
+
+        <div class="Attached-pic">
+          <a href="../html/三国称呼的变化.html">
+            <img src="../img/VR动漫化教学场景.jpg" alt="这里是第一场图片"></img>
+          </a>
+          <h2>VR动漫化教学场景</h2>
+        </div>
+        <div class="Attached-pic">
+          <a href="../html/哈里斯：瓦解日本锁国体制的美国人.html">
+      
+            <img src="../img/新型体感VR护具.jpg" alt="这里是第一场图片"></img></a>
+          <h2>易武馆VR化演练</h2>
+        </div>
+
+
+      </div>
+      <!--banner结束-->
+      
+      
+
+    <!--列表组-->
+    <div class="article-list-bgc">
+      <div class="article-list-bric">
+          <div class="article-list-ul">
+            <h1 class="zxdtzi">最新动态</h1>
+              <p class="tt-new">最新动态</p>
+              <ul>
+                  <hr>
+                  <li>
+                      <a href="../html/article汉末三战.html"><p class="list-title">&nbsp&nbsp新版连城诀之武馆探秘-LOG</p>
+                      <p class="list-zhaiyao">这里是襄阳武馆的大门，两扇黑漆漆的木门向左右敞开着，门口的正上方
+                        高悬着一块黑底金字的大匾，匾上写着四个大字：「襄陽武舘」。大门两边立
+                        柱上竖着一副对联：
+                        
+                                  「幾多離合兩行帛絹難綉盡」
+                        
+                                  「千古恩怨三尺青鋒一斬空」</p>
+                  </a>
+                      <span>Hot：1000🔥</span>
+                  </li>
+                  <hr>
+                  <li>
+                      <a href="../html/article汉末三战.html"><p class="list-title">&nbsp&nbsp传武不要给其他格斗染色，拿搏击当小白鼠</p>
+                      <p class="list-zhaiyao">传统武术指的是近代以来兴起的拳派。尤其是清末民初。也就一百多年吧，不要动不动就几千年。
+                        传统武术跟古代用兵打仗没有关系，古代打仗讲究的是排兵布阵，不是几个练家子冲上去大杀四方。</p>
+                      </a><span>Hot：999&nbsp&nbsp&nbsp🔥</span>
+                  </li>
+                  <hr>
+                  <li>
+                      <a href="../html/article汉末三战.html"><p class="list-title">&nbsp&nbsp传统武术中“撞”、“靠”的实战意义可以用于MMA</p>
+                      <p class="list-zhaiyao">远踢近打贴身摔，其中“打”，一般人的理解就在拳肘膝，其实拳肩肘膝背等还有撞靠等用法，也是机打的中药类型，且有防摔等效果，MMA的开放规则是可以使用这些技术的。</p>
+                      </a><span>Hot：998&nbsp&nbsp&nbsp🔥</span>
+                  </li>
+                  <hr>
+                  <li>
+                      <a href="../html/article汉末三战.html"><p class="list-title">&nbsp&nbsp告诉你们一个关于传统武术的真相</p>
+                      <p class="list-zhaiyao">我父亲从小练武，拜的师傅也是我们那里很有名的武师（很厉害），然而现在我父亲和我聊起武术的时候，他告诉我，现在的高手或许已经不存在了，他说以前的武师都是一有时间就练功，套路已然练到骨子里</p>
+                      </a><span>Hot：997&nbsp&nbsp&nbsp🔥</span>
+                  </li>
+                  <hr>
+                  <li>
+                      <a href="../html/article汉末三战.html"><p class="list-title">&nbsp&nbsp武术大师教你练武术</p>
+                      <p class="list-zhaiyao">海市体院每年举办武术散打通级赛 想证明自己就去打个名次回来 去向整个体制证明自己门派的实用性 </p>
+                  </a>
+                      <span>Hot：1000🔥</span>
+                  </li>
+                  <hr>
+                  <li>
+                      <a href="../html/article汉末三战.html"><p class="list-title">&nbsp&nbsp略论主动进攻的传武</p>
+                      <p class="list-zhaiyao">发现不少实践的人都不懂得传统武术的主动进攻，而有些实践的人的确学会了一些博击的方法（例如对战时保持距离并绕对手打圈转等）这些简单的对战原理虽然一些实践者稍学会</p>
+                      </a><span>Hot：998&nbsp&nbsp&nbsp🔥</span>
+                  </li>
+
+
+              </ul>
+          </div>
+      </div>
+    <div class="footer">
+      <p>易武馆社区</p>
+      <p>Designed By MIS1902 & <a href="">喆喆飞翔</a> 2021</p>
+    </div>
+  </div>
+  
+      <div class="nav-2" >
+        <div class="inner">     
+      <a href="#back"><img src="../img/小武人.png" class="xiaoguan" /></a>
+    </div>
+    </div> 
+</body>
+
+</html>

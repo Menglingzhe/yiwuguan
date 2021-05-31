@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html >
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="shortcut icon" href="../img/页面图标/页标.icon.ico" />
+    <!-- 导航栏 -->
+    <link rel="stylesheet" href="../css/mainnavigation bar.css">
+    <link rel="stylesheet" href="../css//浮动article.css">
+ <!-- 查询-->
+ <link rel="stylesheet" href="../css/查询.css">
+
+    <!-- 回到顶部代码 -->
+    <script type="text/javascript" src="../js/回顶/jquery.min.js"></script>
+    <script type="text/javascript" src="../js/回顶/script.js"></script>
+    <title>赛事查询</title>
+</head>
+
+<body style="background-image:url(../img/页面图标/水墨长.jpg);">
+
+
+  <div class="tt-bar">
+    <!-- 导航栏 -->
+    <div class="lgpic">
+      <a href="../HTML/main.html" class="biaoti">易武馆俱乐部个性装备</a>
+    </div>
+    <!-- 搜索框 -->
+    <form action="https://www.baidu.com/s">
+    <div class="container">
+      
+      <input type="search" placeholder="武术赛事查询..."name="wd" autocomplete="off">
+  
+      <div class="search"></div>
+    </div>
+  </form>
+    <div class="registed-div">
+      <a href="../html/登录页面.html" title="重新登陆">
+        <img src="../img/喆喆头像.jpg" alt="这里是第一场图片"></img>
+      </a>
+      <p><a href="../html/登录页面.html" title="重新登陆"><i>喆喆&nbsp;</i></a>:欢迎登录易武馆</p>
+    </div>
+
+    <!--回到顶部按钮-->
+    <a href="#" class="cd-top">g</a>
+    <nav>
+      <a href="../html/index.html">社区主页</a>
+      <a href="../html/个性装备.html">个性装备</a>
+      <a href="../html/赛事查询.html">赛事查询</a>
+      <a href="../html/学游线路.html">学游线路</a>
+      <a href="../html/健身课程.html">健身课程</a>
+      <a href="../html/武术影院.html">武术剧场</a>
+      <script>
+        document.querySelectorAll('a').forEach(elem => {
+          elem.onmouseenter =
+            elem.onmouseleave = e => {
+              const tolerance = 5;
+              const left = 0;
+              const right = elem.clientWidth;
+              let x = e.pageX - elem.offsetLeft;
+              if (x - tolerance < left) x = left;
+              if (x + tolerance > right) x = right;
+              elem.style.setProperty('--x', `${x}px`);
+            };
+        });
+      </script>
+    </nav>
+
+
+
+
+
+
+
+  </div>
+
+<!--搜索框-->
+  <header class="cxheader">
+    <h1>赛事搜索</h1>
+    <form class="form" action="https://www.baidu.com/s">
+        <div>
+            <input type="text" placeholder="请输入赛事名" id="song-text" class="search-ipt">
+            
+            <button type="button" class="search-btn" id="search-btn">搜索</button>
+        </div>
+    </form>
+</header>
+<div id="song-result" class="song-result">
+   <ul class="songs">
+        <li>
+            <span>
+                2021世界太极拳大赛
+                <b>湖北武汉</b>
+            </span>
+            <button type="button" class="get-lyric-btn btn">获取更多</button>
+        </li>
+    </ul> 
+</div>
+<div class="pagination" id="pagination"></div>
+
+
+
+
+<!--赛事列表-->
+<div class="article-list-bgc" >
+
+      
+        &nbsp&nbsp&nbsp&nbsp&nbsp
+        <div class="article-list-bric">
+            <div class="article-list-ul">
+                <h1 class="zxdtzi">赛事列表</h1>
+                &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+                <hr>
+            </div>
+            <div class="row">
+              <div class="col">
+                <a href="../html/瀚海影院1苏东坡.html">
+                <div class="card">
+                  <img src="../img/太极拳赛.jpg" alt="">
+                  <div class="card-body">
+                    <h5 class="card-title">
+                      <a href="#">2021世界太极拳大赛</a>
+                    </h5>
+                    <p class="date-author">
+                     2021.5 <span class="author">湖北武汉</span>
+                    </p>
+                    <p class="card-text">
+                      中国太极拳界的泰斗级人物陈小旺，陈正雷，赵幼斌，崔仲三等太极大师将登台为市民表演。
+                    </p>
+                  </div>
+                </div>
+              </a>
+              </div>
+          
+              <div class="col">
+                <a href="../html/时间链文章列表.html">
+                <div class="card">
+                  <img src="../img/中拉.jpg"  alt="">
+                  <div class="card-body">
+                    <h5 class="card-title">
+                      <a href="#">2021中拉太极拳网络大赛</a>
+                    </h5>
+                    <p class="date-author">
+                      2021.5<span class="author">网络</span>
+                    </p>
+                    <p class="card-text">
+                      本次中—拉太极拳网络大赛由中国武术协会主办，3月15日拉开帷幕。本次大赛就新标准套路、规定套路、传统套路三大项进行奖项评选
+                    </p>
+                  </div>
+                </div>
+              </a>
+              </div>
+          
+              <div class="col">
+                <a href="../html/汉末流落漠北的才女蔡文姬！一曲胡笳多少离愁.html">
+                <div class="card">
+                  <img src="../img/散打比赛.jpg" alt="">
+                  <div class="card-body">
+                    <h5 class="card-title">
+                      <a href="#">十四运武术散打资格赛</a>
+                    </h5>
+                    <p class="date-author">
+                      2021.5<span class="author">西安</span>
+                    </p>
+                    <p class="card-text">
+                      全球太极拳网络大赛在全国的关注下进入到了最后一个赛期——太极（八法五步）的比赛。
+
+                    </p>
+                  </div>
+                </div>
+              </a>
+              </div>
+
+            </div>
+        </div>
+      <div class="footer">
+        <p>跃历 - Pass History</p>
+        <p>Designed By MIS1902 & <a href="../other/校党学字〔2020〕2号 关于在疫情防控常态化形势下开展2020年学生暑期 “三下乡”社会实践活动的通知.pdf">喆喆飞翔</a> 2020</p>
+      </div>
+    </div>
+
+
+
+</body>
+
+</html>

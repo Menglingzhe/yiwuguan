@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html >
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="shortcut icon" href="../img/页面图标/页标.icon.ico" />
+    <!-- 导航栏 -->
+    <link rel="stylesheet" href="../css/mainnavigation bar.css">
+    <!-- 主体样式 -->
+  <link rel="stylesheet" href="../css/main.css">
+    <!-- 回到顶部代码 -->
+    <script type="text/javascript" src="../js/回顶/jquery.min.js"></script>
+    <script type="text/javascript" src="../js/回顶/script.js"></script>
+    <title>武术剧场</title>
+</head>
+
+<body style="background-image:url(../img/页面图标/水墨长.jpg);">
+
+
+  <div class="tt-bar">
+    <!-- 导航栏 -->
+    <div class="lgpic">
+      <a href="../HTML/main.html" class="biaoti">易武馆俱乐部武术视频</a>
+    </div>
+    <!-- 搜索框 -->
+    <form action="https://www.baidu.com/s">
+    <div class="container">
+      
+      <input type="search" placeholder="武术赛事查询..."name="wd" autocomplete="off">
+  
+      <div class="search"></div>
+    </div>
+  </form>
+    <div class="registed-div">
+      <a href="../html/登录页面.html" title="重新登陆">
+        <img src="../img/喆喆头像.jpg" alt="这里是第一场图片"></img>
+      </a>
+      <p><a href="../html/登录页面.html" title="重新登陆"><i>喆喆&nbsp;</i></a>:欢迎登录易武馆</p>
+    </div>
+
+    <!--回到顶部按钮-->
+    <a href="#" class="cd-top">g</a>
+    <nav>
+      <a href="../html/index.html">社区主页</a>
+      <a href="../html/个性装备.html">个性装备</a>
+      <a href="../html/赛事查询.html">赛事查询</a>
+      <a href="../html/学游线路.html">学游线路</a>
+      <a href="../html/健身课程.html">健身课程</a>
+      <a href="../html/武术影院.html">武术剧场</a>
+      <script>
+        document.querySelectorAll('a').forEach(elem => {
+          elem.onmouseenter =
+            elem.onmouseleave = e => {
+              const tolerance = 5;
+              const left = 0;
+              const right = elem.clientWidth;
+              let x = e.pageX - elem.offsetLeft;
+              if (x - tolerance < left) x = left;
+              if (x + tolerance > right) x = right;
+              elem.style.setProperty('--x', `${x}px`);
+            };
+        });
+      </script>
+    </nav>
+
+  </div>
+
+
+
+  <div class="hhyy-div">
+    <ul class="blocks">
+      <li>
+        <img src="../img/武术教学.jpg" alt="这里是第一场图片"></img>
+        <h3>【高燃】别眨眼！带上耳机！过来感受中华武术带来的震撼冲击！</h3>
+        <div>
+          <span>
+            <a href="../html/瀚海影院故宫.html">
+              <img src="../img/武术教学.jpg" alt="这里是第一场图片"></img>
+            </a>
+          </span>
+        </div>
+      </li>
+      <li>
+        <img src="../img/教学视频2.jpg" alt="这里是第一场图片"></img>
+        <h3>武术/功夫小姐姐打拳太帅了！</h3>
+        <div>
+          <span>
+            <a href="../html/瀚海影院1苏东坡.html">
+              <img src="../img/教学视频2.jpg" alt="这里是第一场图片"></img>
+            </a>
+          </span>
+        </div>
+      </li>
+      <li>
+        <img src="../img/教学视频1.jpg" alt="这里是第一场图片"></img>
+        <h3>李小龙珍贵视频谈武术与哲学</h3>
+        <div>
+          <span>
+            <a href="../html/瀚海影院国宝.html">
+            <img src="../img/教学视频1.jpg" alt="这里是第一场图片"></img></a>
+          </span>
+        </div>
+      </li>
+      <li>
+        <img src="../img/jk武术教学.jpg" alt="这里是第一场图片"></img>
+        <h3>JK会武术谁也拦不住？？</h3>
+        <div>
+          <span><a href="../html/瀚海影院汉匈.html">
+            <img src="../img/jk武术教学.jpg" alt="这里是第一场图片"></img></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+
+
+
+
+
+</body>
+
+</html>
